@@ -1,15 +1,27 @@
 install:
-  - sudo apt-get install -y subversion g++ zlib1g-dev build-essential git python time gawk gettext unzip file libssl-dev wget gcc flex bison libz-dev libncurses-dev make
-  - sudo apt install g++ zlib1g-dev build-essential git python time
-  - sudo apt install gawk gettext unzip file libssl-dev wget
-  - sudo apt install gcc flex bison libz-dev libncurses-dev make libncurses5
-  - sudo apt install ccache automake lzop gperf build-essential zip curl zlib1g-dev zlib1g-dev g++-multilib python-networkx libxml2-utils bzip2 libbz2-dev libbz2-1.0 libghc-bzlib-dev squashfs-tools pngcrush schedtool dpkg-dev liblz4-tool make optipng
+  - sudo apt-get install -y g++ zlib1g-dev build-essential git python time gawk gettext unzip file libssl-dev wget gcc flex bison libz-dev libncurses-dev make
+  - sudo apt install -y ccache automake lzop gperf build-essential zip curl zlib1g-dev zlib1g-dev g++-multilib python-networkx libxml2-utils bzip2 libbz2-dev libbz2-1.0 libghc-bzlib-dev squashfs-tools pngcrush schedtool dpkg-dev liblz4-tool make optipng
+  
+language: java
+
+jdk:
+  - openjdk8
+
+cache: ccache
+
 addons:
   apt:
     update: true
+    packages:
+      - oracle-java8-installer
+
+env:
+  global:
+    - MAKEFLAGS="-j 2"
 
 sudo: false
 
 script:
-  - while sleep 9m; do echo "=====[ $SECONDS seconds still running ]====="; done &
+  - jdk_switcher use openjdk8
+  - while sleep 9m; do echo "=====[ $SECONDS seconds build still running ]====="; done &
   - bash build-twrp.sh
