@@ -2,12 +2,14 @@
 WORKSPACE=~/twrp
 TWRP_SOURCE=git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git
 TWRP_BRANCH=twrp-8.1
-DEVICE_CODE=k10
-DEVICE_MANUFACTURER=oukitel
-DEVICE_SOURCE=https://github.com/N00bTree/android_device_oukitel_k10.git
+DEVICE_CODE=
+export DEVICE_CODE
+DEVICE_MANUFACTURER=
+export DEVICE_CODE
+DEVICE_SOURCE=
 DT_DIR=device/$DEVICE_MANUFACTURER/$DEVICE_CODE
-GIT_USER_NANE=chankruze
-GIT_USER_EMAIL=chakruze@gmail.com
+GIT_USER_NANE=
+GIT_USER_EMAIL=
 GIT_COLOR_UI=false
 ###################################################################################
 git config --global user.name $GIT_USER_NANE
