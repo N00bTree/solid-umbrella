@@ -2,9 +2,9 @@
 WORKSPACE=~/twrp
 TWRP_SOURCE=git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git
 TWRP_BRANCH=twrp-8.1
-DEVICE_CODE=oukitel_wp1
-DEVICE_MANUFACTURER=oukitel
-DEVICE_SOURCE=https://github.com/N00bTree/android_device_oukitel_wp1.git
+DEVICE_CODE=f90m
+DEVICE_MANUFACTURER=lyf
+DEVICE_SOURCE=https://github.com/N00bTree/kaios_device_lfy_f90m.git
 DT_DIR=device/$DEVICE_MANUFACTURER/$DEVICE_CODE
 GIT_USER_NANE=chankruze
 GIT_USER_EMAIL=chakruze@gmail.com
