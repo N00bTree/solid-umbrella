@@ -2,9 +2,9 @@
 WORKSPACE=~/twrp
 TWRP_SOURCE=git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git
 TWRP_BRANCH=twrp-8.1
-DEVICE_CODE=One_Max
-DEVICE_MANUFACTURER=UMIDIGI
-DEVICE_SOURCE=https://github.com/N00bTree/android_device_UMIDIGI_One_Max.git
+DEVICE_CODE=f1_play
+DEVICE_MANUFACTURER=umidigi
+DEVICE_SOURCE=https://github.com/N00bTree/android_device_umidigi_f1_play.git
 DT_DIR=device/$DEVICE_MANUFACTURER/$DEVICE_CODE
 GIT_USER_NANE=chankruze
 GIT_USER_EMAIL=chakruze@gmail.com
