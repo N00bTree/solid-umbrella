@@ -2,14 +2,14 @@
 WORKSPACE=~/twrp
 TWRP_SOURCE=git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git
 TWRP_BRANCH=twrp-8.1
-DEVICE_CODE=
+DEVICE_CODE=e
 export DEVICE_CODE
-DEVICE_MANUFACTURER=
+DEVICE_MANUFACTURER=100r
 export DEVICE_CODE
-DEVICE_SOURCE=
+DEVICE_SOURCE=https://github.com/N00bTree/android_device_10or_e.git
 DT_DIR=device/$DEVICE_MANUFACTURER/$DEVICE_CODE
-GIT_USER_NANE=
-GIT_USER_EMAIL=
+GIT_USER_NANE=chankruze
+GIT_USER_EMAIL=chankruze@gmail.com
 GIT_COLOR_UI=false
 ###################################################################################
 git config --global user.name $GIT_USER_NANE
