@@ -1,9 +1,9 @@
 install:
   - sudo apt-get install -y g++ zlib1g-dev build-essential git python time gawk gettext unzip file libssl-dev wget gcc flex bison libz-dev libncurses-dev make
   - sudo apt install -y ccache automake lzop gperf build-essential zip curl zlib1g-dev zlib1g-dev g++-multilib python-networkx libxml2-utils bzip2 libbz2-dev libbz2-1.0 libghc-bzlib-dev squashfs-tools pngcrush schedtool dpkg-dev liblz4-tool make optipng
-  - sudo apt install -y software-properties-common
-  - sudo add-apt-repository ppa:webupd8team/java
-  - sudo apt update
+  # - sudo apt install -y software-properties-common
+  # - sudo add-apt-repository ppa:webupd8team/java
+  # - sudo apt update
 
 language: java
 
@@ -15,8 +15,8 @@ cache: ccache
 addons:
   apt:
     update: true
-    packages:
-      - oracle-java8-installer
+    # packages:
+    #   - oracle-java8-installer
 
 env:
   global:
